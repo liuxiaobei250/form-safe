@@ -1,0 +1,38 @@
+:root {
+    --error-color : red;
+    --true-color : green;
+}
+
+* {
+    box-sizing: border-box;   
+    /* 这样下面的框加间距 就不会算在框框外 */
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;   
+    /* flex是个容器 */
+    margin: 0;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0px 2px 5px black;
+    width: 400px;
+}
+
+h2 {
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
