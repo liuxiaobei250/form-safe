@@ -14,14 +14,16 @@ body {
     display: flex;   
     /* flex是个容器 */
     margin: 0;
-    min-height: 50vh;
+    min-height: 100vh;
     justify-content: center;
+    /* 水平方向居中 */
     align-items: center;
+    /* 垂直方向居中 */
 }
 
 .container {
 
-    background-color: bisque;
+    background-color: white;
     border-radius: 5px;
     padding: 50px;
     box-shadow: 0px 2px 5px black;
@@ -30,9 +32,73 @@ body {
 
 h2 {
     align-items: center;
-    margin: 0 0 20px;
+    margin: 0 0 10px;8
 }
 
 .form {
     padding: 30px 40px;
+}
+
+.form-control {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #666;
+    display: block;
+    /* 可以让说明单独一行 */
+}
+
+.form-control input{
+    border: 2px solid #c9c9c9;
+    height: 26px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #474747;
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+    /* 引用最上面root变量 */
+}
+
+.form-control.true input {
+    border-color: var(--true-color)
+    /* 引用最上面root变量 */
+}
+
+
+
+
+
+.form button {
+    background-color: rgb(12, 184, 126);
+    border: 2px solid rgb(12, 184, 126);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+ 
+}
+
+.form button:hover {
+    background-color: rgb(21, 255, 177);
+    border: rgb(21, 255, 177);
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
